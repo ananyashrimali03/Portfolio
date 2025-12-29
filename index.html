@@ -288,6 +288,17 @@
             letter-spacing: 0.05em;
         }
         
+        /* PROJECT IMAGES */
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            background: var(--light-bg);
+        }
+        
         .project-title {
             font-size: 20px;
             color: var(--primary);
@@ -471,6 +482,17 @@
             border-bottom: 1px solid var(--border);
         }
         
+        /* MODAL IMAGES */
+        .modal-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+            background: var(--light-bg);
+        }
+        
         .modal-section {
             margin-bottom: 3rem;
         }
@@ -640,7 +662,6 @@
             <span class="skill-badge">Python</span>
             <span class="skill-badge">JavaScript</span>
             <span class="skill-badge">Machine Learning</span>
-            <span class="skill-badge">Data Science and Visualization</span>
             <span class="skill-badge">Climate Studio</span>
             <span class="skill-badge">Energy Modeling</span>
             <span class="skill-badge">Parametric Design</span>
@@ -656,7 +677,7 @@
         <div class="tabs-container">
             <button class="tab-btn active" onclick="switchTab('all')">All Projects</button>
             <button class="tab-btn" onclick="switchTab('computational')">Computational Design</button>
-            <button class="tab-btn" onclick="switchTab('fullstack')">Full-Stack Development</button>
+            <button class="tab-btn" onclick="switchTab('fullstack')">Web Development</button>
             <button class="tab-btn" onclick="switchTab('performance')">Building Performance</button>
         </div>
     </div>
@@ -668,11 +689,13 @@
                 <h2 class="section-title">All Work</h2>
                 
                 <div class="projects-grid">
+                    <!-- Project 1: Thesis -->
                     <div class="project-card" onclick="openModal('thesis')">
                         <div class="project-header">
                             <span class="project-number">01</span>
                             <span class="project-year">Ongoing</span>
                         </div>
+                        <img src="images/projects/thesis.jpg" alt="Adaptive Reuse Thesis" class="project-image">
                         <h3 class="project-title">Adaptive Reuse Thesis</h3>
                         <p class="project-meta">Pittsburgh, PA · Office-to-Residential · Computational Research</p>
                         <p class="project-description">
@@ -705,11 +728,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 2: Tartan Tuesday -->
                     <div class="project-card" onclick="openModal('tartan')">
                         <div class="project-header">
                             <span class="project-number">02</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/tartan.jpg" alt="Tartan Tuesday Management System" class="project-image">
                         <h3 class="project-title">Tartan Tuesday Management System</h3>
                         <p class="project-meta">Carnegie Mellon University · Full-Stack Web Application</p>
                         <p class="project-description">
@@ -721,7 +746,7 @@
                         <div class="project-stats">
                             <div class="stat">
                                 <div class="stat-value">200+</div>
-                                <div class="stat-label">Weekly Data Addition</div>
+                                <div class="stat-label">Weekly Users</div>
                             </div>
                             <div class="stat">
                                 <div class="stat-value">React</div>
@@ -742,11 +767,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 3: ASHRAE -->
                     <div class="project-card" onclick="openModal('ashrae')">
                         <div class="project-header">
                             <span class="project-number">03</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/ashrae.jpg" alt="ASHRAE Library Design" class="project-image">
                         <h3 class="project-title">ASHRAE Library Design</h3>
                         <p class="project-meta">São Paulo, Brazil · Climate Zone 2A · 3-Story Public Library</p>
                         <p class="project-description">
@@ -777,11 +804,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 4: Fire Risk -->
                     <div class="project-card" onclick="openModal('fire')">
                         <div class="project-header">
                             <span class="project-number">04</span>
                             <span class="project-year">2025</span>
                         </div>
+                        <img src="images/projects/fire.jpg" alt="Urban Fire Risk Prediction" class="project-image">
                         <h3 class="project-title">Urban Fire Risk Prediction</h3>
                         <p class="project-meta">Harvard HPAIR Impact Challenge Winner · AI Geospatial Analysis</p>
                         <p class="project-description">
@@ -812,11 +841,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 5: HVAC -->
                     <div class="project-card" onclick="openModal('hvac')">
                         <div class="project-header">
                             <span class="project-number">05</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/hvac.jpg" alt="Small Office HVAC Analysis" class="project-image">
                         <h3 class="project-title">Small Office HVAC Analysis</h3>
                         <p class="project-meta">San Francisco, CA · System Comparison Study</p>
                         <p class="project-description">
@@ -847,11 +878,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 6: Chicago -->
                     <div class="project-card" onclick="openModal('chicago')">
                         <div class="project-header">
                             <span class="project-number">06</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/chicago.jpg" alt="Chicago Drug Data Dashboard" class="project-image">
                         <h3 class="project-title">Chicago Drug Data Dashboard</h3>
                         <p class="project-meta">Interactive Data Science · Web Application</p>
                         <p class="project-description">
@@ -882,11 +915,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 7: Attendance -->
                     <div class="project-card" onclick="openModal('attendance')">
                         <div class="project-header">
                             <span class="project-number">07</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/attendance.jpg" alt="Attendance Matrix Tool" class="project-image">
                         <h3 class="project-title">Attendance Matrix Tool</h3>
                         <p class="project-meta">Carnegie Mellon University · Web-Based Automation</p>
                         <p class="project-description">
@@ -917,11 +952,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 8: Shading -->
                     <div class="project-card" onclick="openModal('shading')">
                         <div class="project-header">
                             <span class="project-number">08</span>
                             <span class="project-year">2025</span>
                         </div>
+                        <img src="images/projects/shading.jpg" alt="Shaping Daylight Workshop" class="project-image">
                         <h3 class="project-title">Shaping Daylight Workshop</h3>
                         <p class="project-meta">Academic Workshop · Parametric Daylighting</p>
                         <p class="project-description">
@@ -951,11 +988,13 @@
                         </div>
                     </div>
 
+                    <!-- Project 9: GIS -->
                     <div class="project-card" onclick="openModal('gis')">
                         <div class="project-header">
                             <span class="project-number">09</span>
                             <span class="project-year">Ongoing</span>
                         </div>
+                        <img src="images/projects/gis.jpg" alt="Environmental Justice Analysis" class="project-image">
                         <h3 class="project-title">Environmental Justice Analysis</h3>
                         <p class="project-meta">Louisiana Cancer Alley · GIS Spatial Analysis</p>
                         <p class="project-description">
@@ -992,39 +1031,28 @@
                 <h2 class="section-title">Computational Design</h2>
                 
                 <div class="projects-grid">
+                    <!-- Same projects but filtered for computational -->
                     <div class="project-card" onclick="openModal('thesis')">
                         <div class="project-header">
                             <span class="project-number">01</span>
                             <span class="project-year">Ongoing</span>
                         </div>
+                        <img src="images/projects/thesis.jpg" alt="Adaptive Reuse Thesis" class="project-image">
                         <h3 class="project-title">Adaptive Reuse Thesis</h3>
                         <p class="project-meta">Pittsburgh, PA · Office-to-Residential · Computational Research</p>
                         <p class="project-description">
                             Parametric analysis using RhinoPython + Grasshopper + ML for daylighting optimization 
-                            of 1965-1985 office buildings. Automated workflow evaluating spatial daylight autonomy 
-                            across 100+ building configurations.
+                            of 1965-1985 office buildings.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">100+</div>
-                                <div class="stat-label">Iterations</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">ML</div>
-                                <div class="stat-label">Prediction</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">sDA/ASE</div>
-                                <div class="stat-label">Metrics</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">100+</div><div class="stat-label">Iterations</div></div>
+                            <div class="stat"><div class="stat-value">ML</div><div class="stat-label">Prediction</div></div>
+                            <div class="stat"><div class="stat-value">sDA/ASE</div><div class="stat-label">Metrics</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">RhinoPython</span>
                             <span class="tag">Grasshopper</span>
                             <span class="tag">Machine Learning</span>
-                            <span class="tag">ClimateStudio API</span>
                         </div>
                     </div>
 
@@ -1033,34 +1061,20 @@
                             <span class="project-number">02</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/tartan.jpg" alt="Tartan Tuesday" class="project-image">
                         <h3 class="project-title">Tartan Tuesday Management System</h3>
-                        <p class="project-meta">Carnegie Mellon University · Full-Stack Web Application</p>
+                        <p class="project-meta">Carnegie Mellon University</p>
                         <p class="project-description">
-                            Built React + Google Apps Script web application for student engagement program 
-                            serving 200+ weekly participants. Real-time cloud sync, duplicate detection, 
-                            point tracking, and Excel import/export.
+                            React + Google Apps Script web application for 200+ weekly participants with real-time cloud sync.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">200+</div>
-                                <div class="stat-label">Weekly Users</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">React</div>
-                                <div class="stat-label">Frontend</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Cloud</div>
-                                <div class="stat-label">Real-time</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">200+</div><div class="stat-label">Users</div></div>
+                            <div class="stat"><div class="stat-value">React</div><div class="stat-label">Frontend</div></div>
+                            <div class="stat"><div class="stat-value">Cloud</div><div class="stat-label">Backend</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">React</span>
-                            <span class="tag">Google Apps Script</span>
                             <span class="tag">API Integration</span>
-                            <span class="tag">State Management</span>
                         </div>
                     </div>
 
@@ -1069,100 +1083,63 @@
                             <span class="project-number">03</span>
                             <span class="project-year">2025</span>
                         </div>
+                        <img src="images/projects/fire.jpg" alt="Fire Risk Prediction" class="project-image">
                         <h3 class="project-title">Urban Fire Risk Prediction</h3>
-                        <p class="project-meta">Harvard HPAIR Impact Challenge Winner · AI Analysis</p>
+                        <p class="project-meta">Harvard HPAIR Winner</p>
                         <p class="project-description">
-                            ML model for fire-spread prediction using geospatial data. 
-                            Interactive dashboard integrating simulation with predictive algorithms.
+                            ML model for fire-spread prediction using geospatial data.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">Winner</div>
-                                <div class="stat-label">Harvard HPAIR</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">ML</div>
-                                <div class="stat-label">Prediction</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">GIS</div>
-                                <div class="stat-label">Analysis</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">Winner</div><div class="stat-label">HPAIR</div></div>
+                            <div class="stat"><div class="stat-value">ML</div><div class="stat-label">Prediction</div></div>
+                            <div class="stat"><div class="stat-value">GIS</div><div class="stat-label">Analysis</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">Machine Learning</span>
                             <span class="tag">Python</span>
-                            <span class="tag">Geospatial</span>
                         </div>
                     </div>
 
                     <div class="project-card" onclick="openModal('chicago')">
                         <div class="project-header">
                             <span class="project-number">04</span>
-                            <span class="project-year">2025</span>
+                            <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/chicago.jpg" alt="Chicago Dashboard" class="project-image">
                         <h3 class="project-title">Chicago Drug Data Dashboard</h3>
-                        <p class="project-meta">Interactive Data Science · Web Application</p>
+                        <p class="project-meta">Interactive Data Science</p>
                         <p class="project-description">
-                            Python dashboard with Pandas, Altair, Pydeck, Streamlit. 
-                            Interactive geospatial visualizations of 100,000+ data points.
+                            Python dashboard with interactive geospatial visualizations (100K+ data points).
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">100K+</div>
-                                <div class="stat-label">Data Points</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Python</div>
-                                <div class="stat-label">Stack</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">GeoViz</div>
-                                <div class="stat-label">Interactive</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">100K+</div><div class="stat-label">Data Points</div></div>
+                            <div class="stat"><div class="stat-value">Python</div><div class="stat-label">Stack</div></div>
+                            <div class="stat"><div class="stat-value">GeoViz</div><div class="stat-label">Interactive</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Streamlit</span>
-                            <span class="tag">Geospatial Viz</span>
                         </div>
                     </div>
 
                     <div class="project-card" onclick="openModal('attendance')">
                         <div class="project-header">
                             <span class="project-number">05</span>
-                            <span class="project-year">2025</span>
+                            <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/attendance.jpg" alt="Attendance Tool" class="project-image">
                         <h3 class="project-title">Attendance Matrix Tool</h3>
-                        <p class="project-meta">Carnegie Mellon University · Web-Based Automation</p>
+                        <p class="project-meta">Web-Based Automation</p>
                         <p class="project-description">
-                            Built web-based tool to automate attendance tracking for 66-student class across 21 sessions. 
-                            Processes Excel files, calculates percentages, and generates formatted reports.
+                            Automated attendance tracking for 66 students across 21 sessions.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">66</div>
-                                <div class="stat-label">Students</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">21</div>
-                                <div class="stat-label">Sessions</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Auto</div>
-                                <div class="stat-label">Processing</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">66</div><div class="stat-label">Students</div></div>
+                            <div class="stat"><div class="stat-value">21</div><div class="stat-label">Sessions</div></div>
+                            <div class="stat"><div class="stat-value">Auto</div><div class="stat-label">Processing</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
-                            <span class="tag">Excel Processing</span>
-                            <span class="tag">Web App</span>
                             <span class="tag">Automation</span>
                         </div>
                     </div>
@@ -1170,34 +1147,22 @@
                     <div class="project-card" onclick="openModal('gis')">
                         <div class="project-header">
                             <span class="project-number">06</span>
-                            <span class="project-year">2025</span>
+                            <span class="project-year">Ongoing</span>
                         </div>
+                        <img src="images/projects/gis.jpg" alt="GIS Analysis" class="project-image">
                         <h3 class="project-title">Environmental Justice Analysis</h3>
-                        <p class="project-meta">Louisiana Cancer Alley · GIS Analysis</p>
+                        <p class="project-meta">Louisiana Cancer Alley</p>
                         <p class="project-description">
-                            Spatial analysis with kernel density, buffer zones, and demographic correlations 
-                            using Python scripting and ModelBuilder workflows.
+                            GIS spatial analysis with kernel density and demographic correlations.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">GIS</div>
-                                <div class="stat-label">Analysis</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Python</div>
-                                <div class="stat-label">Scripting</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Model</div>
-                                <div class="stat-label">Builder</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">GIS</div><div class="stat-label">Analysis</div></div>
+                            <div class="stat"><div class="stat-value">Python</div><div class="stat-label">Scripting</div></div>
+                            <div class="stat"><div class="stat-value">Model</div><div class="stat-label">Builder</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">GIS</span>
                             <span class="tag">Python</span>
-                            <span class="tag">Data Viz</span>
                         </div>
                     </div>
                 </div>
@@ -1211,70 +1176,45 @@
                     <div class="project-card" onclick="openModal('tartan')">
                         <div class="project-header">
                             <span class="project-number">01</span>
-                            <span class="project-year">Ongoing</span>
+                            <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/tartan.jpg" alt="Tartan Tuesday" class="project-image">
                         <h3 class="project-title">Tartan Tuesday Management System</h3>
-                        <p class="project-meta">Carnegie Mellon University · React + Cloud Integration</p>
+                        <p class="project-meta">Full-Stack Application</p>
                         <p class="project-description">
-                            Full-stack web application serving 200+ weekly participants. Built with React frontend, 
-                            Google Apps Script backend, real-time cloud sync, and complex state management.
+                            React frontend with Google Apps Script backend serving 200+ weekly participants.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">200+</div>
-                                <div class="stat-label">Weekly Users</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">React</div>
-                                <div class="stat-label">Frontend</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Cloud</div>
-                                <div class="stat-label">Backend</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">200+</div><div class="stat-label">Users</div></div>
+                            <div class="stat"><div class="stat-value">React</div><div class="stat-label">Frontend</div></div>
+                            <div class="stat"><div class="stat-value">Cloud</div><div class="stat-label">Backend</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Google Apps Script</span>
                             <span class="tag">API Integration</span>
-                            <span class="tag">State Management</span>
-                            <span class="tag">Excel I/O</span>
                         </div>
                     </div>
 
                     <div class="project-card" onclick="openModal('attendance')">
                         <div class="project-header">
                             <span class="project-number">02</span>
-                            <span class="project-year">2025</span>
+                            <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/attendance.jpg" alt="Attendance Tool" class="project-image">
                         <h3 class="project-title">Attendance Matrix Tool</h3>
-                        <p class="project-meta">Carnegie Mellon University · Web Automation</p>
+                        <p class="project-meta">Web Automation</p>
                         <p class="project-description">
-                            Web-based automation tool processing Excel files for 66 students across 21 sessions. 
-                            Client-side processing with dynamic report generation and export functionality.
+                            Client-side Excel processing tool with dynamic report generation.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">66</div>
-                                <div class="stat-label">Students</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">21</div>
-                                <div class="stat-label">Sessions</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">5hrs</div>
-                                <div class="stat-label">Saved Weekly</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">66</div><div class="stat-label">Students</div></div>
+                            <div class="stat"><div class="stat-value">21</div><div class="stat-label">Sessions</div></div>
+                            <div class="stat"><div class="stat-value">5hrs</div><div class="stat-label">Saved Weekly</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
                             <span class="tag">SheetJS</span>
-                            <span class="tag">Excel Processing</span>
                             <span class="tag">GitHub Pages</span>
                         </div>
                     </div>
@@ -1282,36 +1222,23 @@
                     <div class="project-card" onclick="openModal('chicago')">
                         <div class="project-header">
                             <span class="project-number">03</span>
-                            <span class="project-year">2025</span>
+                            <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/chicago.jpg" alt="Chicago Dashboard" class="project-image">
                         <h3 class="project-title">Chicago Drug Data Dashboard</h3>
-                        <p class="project-meta">Interactive Data Science Web App</p>
+                        <p class="project-meta">Python Web Application</p>
                         <p class="project-description">
-                            Full-featured Python web dashboard with Streamlit framework. Interactive geospatial 
-                            visualizations, time-series analysis, and real-time filtering of 100,000+ data points.
+                            Streamlit-based dashboard with geospatial visualizations and real-time filtering.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">100K+</div>
-                                <div class="stat-label">Data Points</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Streamlit</div>
-                                <div class="stat-label">Framework</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">Interactive</div>
-                                <div class="stat-label">Real-time</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">100K+</div><div class="stat-label">Data Points</div></div>
+                            <div class="stat"><div class="stat-value">Streamlit</div><div class="stat-label">Framework</div></div>
+                            <div class="stat"><div class="stat-value">Interactive</div><div class="stat-label">Real-time</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Streamlit</span>
                             <span class="tag">Pandas</span>
-                            <span class="tag">Pydeck</span>
-                            <span class="tag">Altair</span>
                         </div>
                     </div>
                 </div>
@@ -1327,32 +1254,20 @@
                             <span class="project-number">01</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/ashrae.jpg" alt="ASHRAE Library" class="project-image">
                         <h3 class="project-title">ASHRAE Library Design</h3>
-                        <p class="project-meta">São Paulo, Brazil · Climate Zone 2A</p>
+                        <p class="project-meta">São Paulo, Brazil</p>
                         <p class="project-description">
-                            Comprehensive HVAC system design with VRF-DOAS and renewable energy, 
-                            achieving 45% energy reduction through optimization.
+                            VRF-DOAS system design achieving 45% energy reduction.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">45%</div>
-                                <div class="stat-label">Energy Saved</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">157</div>
-                                <div class="stat-label">kWh/m² EUI</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">398k</div>
-                                <div class="stat-label">kWh Solar/Year</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">45%</div><div class="stat-label">Energy Saved</div></div>
+                            <div class="stat"><div class="stat-value">157</div><div class="stat-label">kWh/m² EUI</div></div>
+                            <div class="stat"><div class="stat-value">398k</div><div class="stat-label">kWh Solar</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">VRF-DOAS</span>
                             <span class="tag">Energy Analysis</span>
-                            <span class="tag">ClimateStudio</span>
                         </div>
                     </div>
 
@@ -1361,30 +1276,18 @@
                             <span class="project-number">02</span>
                             <span class="project-year">2024</span>
                         </div>
+                        <img src="images/projects/hvac.jpg" alt="HVAC Analysis" class="project-image">
                         <h3 class="project-title">Small Office HVAC Analysis</h3>
-                        <p class="project-meta">San Francisco, CA · System Comparison</p>
+                        <p class="project-meta">San Francisco, CA</p>
                         <p class="project-description">
-                            System analysis with load calculations and ERV sizing. 
-                            VRF recommendation achieving 33% energy savings.
+                            System comparison achieving 33% energy savings.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">33%</div>
-                                <div class="stat-label">Energy Saved</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">54</div>
-                                <div class="stat-label">kBTU/ft² EUI</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">VRF</div>
-                                <div class="stat-label">Selected</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">33%</div><div class="stat-label">Energy Saved</div></div>
+                            <div class="stat"><div class="stat-value">54</div><div class="stat-label">kBTU/ft²</div></div>
+                            <div class="stat"><div class="stat-value">VRF</div><div class="stat-label">Selected</div></div>
                         </div>
-                        
                         <div class="project-tags">
-                            <span class="tag">System Selection</span>
                             <span class="tag">Load Calculations</span>
                             <span class="tag">ERV Sizing</span>
                         </div>
@@ -1395,32 +1298,20 @@
                             <span class="project-number">03</span>
                             <span class="project-year">Ongoing</span>
                         </div>
+                        <img src="images/projects/thesis.jpg" alt="Thesis Daylighting" class="project-image">
                         <h3 class="project-title">Adaptive Reuse Thesis</h3>
-                        <p class="project-meta">Pittsburgh, PA · Daylighting Analysis</p>
+                        <p class="project-meta">Daylighting Analysis</p>
                         <p class="project-description">
-                            Daylighting performance analysis of office-to-residential conversions. 
-                            Evaluating spatial daylight autonomy across parametric iterations.
+                            Performance analysis of office-to-residential conversions.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">100+</div>
-                                <div class="stat-label">Iterations</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">sDA</div>
-                                <div class="stat-label">Metric</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">ASE</div>
-                                <div class="stat-label">Analysis</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">100+</div><div class="stat-label">Iterations</div></div>
+                            <div class="stat"><div class="stat-value">sDA</div><div class="stat-label">Metric</div></div>
+                            <div class="stat"><div class="stat-value">ASE</div><div class="stat-label">Analysis</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">Daylighting</span>
                             <span class="tag">ClimateStudio</span>
-                            <span class="tag">Parametric</span>
                         </div>
                     </div>
 
@@ -1429,31 +1320,19 @@
                             <span class="project-number">04</span>
                             <span class="project-year">2025</span>
                         </div>
+                        <img src="images/projects/shading.jpg" alt="Daylight Workshop" class="project-image">
                         <h3 class="project-title">Shaping Daylight Workshop</h3>
-                        <p class="project-meta">Academic Workshop · Parametric Daylighting</p>
+                        <p class="project-meta">Parametric Daylighting</p>
                         <p class="project-description">
-                            Annual daylight metrics, glare analysis, and view studies. 
-                            Parametric shading strategy optimization.
+                            Annual daylight metrics and parametric shading optimization.
                         </p>
-                        
                         <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">sDA</div>
-                                <div class="stat-label">Metric</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">ASE</div>
-                                <div class="stat-label">Analysis</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">DGP</div>
-                                <div class="stat-label">Glare</div>
-                            </div>
+                            <div class="stat"><div class="stat-value">sDA</div><div class="stat-label">Metric</div></div>
+                            <div class="stat"><div class="stat-value">ASE</div><div class="stat-label">Analysis</div></div>
+                            <div class="stat"><div class="stat-value">DGP</div><div class="stat-label">Glare</div></div>
                         </div>
-                        
                         <div class="project-tags">
                             <span class="tag">Daylighting</span>
-                            <span class="tag">ClimateStudio</span>
                             <span class="tag">Glare Analysis</span>
                         </div>
                     </div>
@@ -1481,11 +1360,12 @@
         <p>© 2025 Ananya Shrimali · Built with focus on clarity and performance</p>
     </footer>
 
-    <!-- Modals - keeping all your existing modals -->
+    <!-- MODALS WITH IMAGES -->
     <div id="thesisModal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('thesis')">&times;</button>
             <h2 class="modal-title">Adaptive Reuse: Office-to-Residential Conversions</h2>
+            <img src="images/projects/thesis-detail.jpg" alt="Thesis Research Detail" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
@@ -1502,34 +1382,12 @@
                     <li>Comprehensive daylighting analysis via ClimateStudio API</li>
                     <li>Machine learning for spatial daylight autonomy prediction</li>
                     <li>Evaluation of 100+ building configurations</li>
-                    <li>Focus on 1965-1985 office typologies in Pittsburgh</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Methodology</h3>
-                <ul>
-                    <li>Automated parametric model generation for design exploration</li>
-                    <li>Batch daylighting simulation and performance optimization</li>
-                    <li>Building systems analysis for conversion feasibility</li>
-                    <li>Integration of computational design with building performance metrics</li>
-                    <li>Data-driven decision making for early-stage design</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Key Challenges</h3>
-                <ul>
-                    <li>Deep floor plates limiting natural light penetration</li>
-                    <li>Structural grid constraints on unit layouts</li>
-                    <li>Building systems adaptation for residential requirements</li>
-                    <li>Balancing unit count with daylighting quality</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools & Technologies</h3>
-                <p><strong>Rhino, Grasshopper, RhinoPython, ClimateStudio API, Machine Learning, Python, sDA/ASE Analysis</strong></p>
+                <p><strong>Rhino, Grasshopper, RhinoPython, ClimateStudio API, Machine Learning, Python</strong></p>
             </div>
         </div>
     </div>
@@ -1538,54 +1396,29 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('tartan')">&times;</button>
             <h2 class="modal-title">Tartan Tuesday Management System</h2>
+            <img src="images/projects/tartan-detail.jpg" alt="Tartan Tuesday App Interface" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Full-stack web application built for Carnegie Mellon's Tartan Tuesday student engagement program, 
-                    serving 200+ weekly participants with real-time attendance tracking, point management, and prize redemption.
+                    Full-stack web application serving 200+ weekly participants with real-time attendance tracking, 
+                    point management, and prize redemption.
                 </p>
             </div>
 
             <div class="highlight-box">
                 <h3>Key Features</h3>
                 <ul>
-                    <li>Real-time attendance tracking with student ID card swipe</li>
-                    <li>Google Sheets API integration for cloud data synchronization</li>
-                    <li>Duplicate detection preventing multiple check-ins per day</li>
-                    <li>Point tracking system with Free Spin logic</li>
-                    <li>Prize redemption with automatic point deduction</li>
-                    <li>Excel import/export for roster and historical data</li>
-                    <li>Statistics dashboard with sortable student history</li>
-                    <li>Responsive design for desktop and mobile use</li>
+                    <li>Real-time cloud synchronization with Google Sheets API</li>
+                    <li>Duplicate detection and point tracking system</li>
+                    <li>Excel import/export functionality</li>
+                    <li>Responsive design for desktop and mobile</li>
                 </ul>
             </div>
 
             <div class="modal-section">
-                <h3>Technical Implementation</h3>
-                <ul>
-                    <li>Frontend: React 18 with hooks-based state management</li>
-                    <li>Backend: Google Apps Script for serverless cloud integration</li>
-                    <li>API: RESTful endpoints for data CRUD operations</li>
-                    <li>Data Processing: XLSX.js for Excel file handling</li>
-                    <li>Real-time Updates: Automatic cloud synchronization on every transaction</li>
-                    <li>Complex Logic: Duplicate prevention, cumulative point calculation, Free Spin workflow</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Impact</h3>
-                <ul>
-                    <li>Replaced manual Excel workflow saving 5+ hours weekly</li>
-                    <li>Zero data loss with cloud-based storage</li>
-                    <li>Handles 200+ weekly participants efficiently</li>
-                    <li>3,000+ historical transaction records managed</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Tools & Technologies</h3>
-                <p><strong>React, JavaScript, Google Apps Script, Google Sheets API, XLSX.js, HTML/CSS, REST API, State Management</strong></p>
+                <h3>Tools</h3>
+                <p><strong>React, JavaScript, Google Apps Script, Google Sheets API, XLSX.js</strong></p>
             </div>
         </div>
     </div>
@@ -1594,39 +1427,28 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('fire')">&times;</button>
             <h2 class="modal-title">Urban Fire Risk Prediction</h2>
+            <img src="images/projects/fire-detail.jpg" alt="Fire Risk Dashboard" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Winner of Harvard HPAIR Impact Challenge 2025. Developed machine learning model for predicting 
-                    fire-spread risk in urban districts using geospatial data and simulation-based analysis.
+                    Winner of Harvard HPAIR Impact Challenge 2025. ML model for fire-spread prediction 
+                    using geospatial data and simulation-based analysis.
                 </p>
             </div>
 
             <div class="highlight-box">
-                <h3>Project Achievements</h3>
-                <ul>
-                    <li>Won Harvard HPAIR Impact Challenge 2025</li>
-                    <li>Developed predictive ML model for urban fire risk assessment</li>
-                    <li>Created interactive visualization dashboard for decision-making</li>
-                    <li>Integrated simulation data with predictive algorithms</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
                 <h3>Methodology</h3>
                 <ul>
                     <li>Geospatial data collection and processing</li>
                     <li>Machine learning model training on historical fire data</li>
-                    <li>Simulation-based fire spread analysis</li>
-                    <li>Interactive dashboard development for risk visualization</li>
-                    <li>Integration of multiple data sources (weather, building density, infrastructure)</li>
+                    <li>Interactive dashboard for risk visualization</li>
                 </ul>
             </div>
 
             <div class="modal-section">
-                <h3>Tools & Technologies</h3>
-                <p><strong>Python, Machine Learning (Scikit-learn), GIS Analysis, Data Visualization, Geospatial Processing</strong></p>
+                <h3>Tools</h3>
+                <p><strong>Python, Machine Learning (Scikit-learn), GIS Analysis, Data Visualization</strong></p>
             </div>
         </div>
     </div>
@@ -1635,12 +1457,13 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('chicago')">&times;</button>
             <h2 class="modal-title">Chicago Drug Data Dashboard</h2>
+            <img src="images/projects/chicago-detail.jpg" alt="Chicago Dashboard Interface" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Interactive data science web application analyzing 100,000+ drug-related data points in Chicago. 
-                    Built with Python, featuring geospatial visualizations and time-series analysis.
+                    Interactive data science web application analyzing 100,000+ drug-related data points 
+                    with geospatial visualizations and time-series analysis.
                 </p>
             </div>
 
@@ -1650,39 +1473,27 @@
                     <li>Interactive geospatial visualizations using Pydeck</li>
                     <li>Time-series analysis with Altair charts</li>
                     <li>Real-time data filtering and exploration</li>
-                    <li>Pattern recognition across 100,000+ data points</li>
-                    <li>Responsive web interface with Streamlit</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Technical Stack</h3>
-                <ul>
-                    <li>Data Processing: Pandas, NumPy</li>
-                    <li>Visualization: Altair (charts), Pydeck (geospatial maps)</li>
-                    <li>Web Framework: Streamlit</li>
-                    <li>Analysis: Statistical pattern recognition, temporal trends</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools</h3>
-                <p><strong>Python, Pandas, NumPy, Altair, Pydeck, Streamlit, Data Visualization, Geospatial Analysis</strong></p>
+                <p><strong>Python, Pandas, NumPy, Altair, Pydeck, Streamlit</strong></p>
             </div>
         </div>
     </div>
 
-    <!-- Keep all your other existing modals (ashrae, hvac, shading, gis) -->
     <div id="ashraeModal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('ashrae')">&times;</button>
             <h2 class="modal-title">ASHRAE Design Competition: São Paulo Public Library</h2>
+            <img src="images/projects/ashrae-detail.jpg" alt="Library HVAC Design" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Comprehensive HVAC system design for a three-story public library in São Paulo, Brazil (Climate Zone 2A). 
-                    Designed innovative hybrid system integrating VRF-DOAS with renewable energy.
+                    Comprehensive HVAC system design for a three-story public library 
+                    integrating VRF-DOAS with renewable energy.
                 </p>
             </div>
 
@@ -1690,25 +1501,14 @@
                 <h3>Performance Achievements</h3>
                 <ul>
                     <li>45% energy reduction (284 to 157 kWh/m²)</li>
-                    <li>397,800 kWh/year solar generation (250 kW PV system)</li>
-                    <li>Operational carbon: 101 kgCO₂/m² (from 184 baseline)</li>
-                    <li>Energy cost: $29/m² annually</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>System Design</h3>
-                <ul>
-                    <li>Primary: VRF with DOAS</li>
-                    <li>Dehumidification: Desiccant dehumidifiers</li>
-                    <li>Ventilation: Energy Recovery Ventilators (ERV)</li>
-                    <li>Renewable: 250 kW rooftop PV system</li>
+                    <li>397,800 kWh/year solar generation</li>
+                    <li>Operational carbon: 101 kgCO₂/m²</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools</h3>
-                <p><strong>ClimateStudio, Energy Modeling, ASHRAE Standards 62.1, 90.1, 55, Load Calculations, PVWatts</strong></p>
+                <p><strong>ClimateStudio, Energy Modeling, ASHRAE Standards, PVWatts</strong></p>
             </div>
         </div>
     </div>
@@ -1717,29 +1517,28 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('hvac')">&times;</button>
             <h2 class="modal-title">Small Office HVAC System Selection</h2>
+            <img src="images/projects/hvac-detail.jpg" alt="HVAC System Analysis" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Comprehensive HVAC analysis for small coworking office in San Francisco. 
-                    Evaluated multiple systems, recommending mini-split VRF for optimal performance.
+                    Comprehensive HVAC analysis for small coworking office with 
+                    load calculations and system recommendations.
                 </p>
             </div>
 
             <div class="highlight-box">
                 <h3>Key Results</h3>
                 <ul>
-                    <li>33% energy savings with VRF</li>
+                    <li>33% energy savings with VRF system</li>
                     <li>Site EUI: 54 kBTU/ft² (from 81 baseline)</li>
-                    <li>Peak cooling: 79.7 kBTU/hr</li>
-                    <li>Peak heating: 61.3 kBTU/hr</li>
-                    <li>Fresh air: 770.52 CFM</li>
+                    <li>Detailed load calculations and ERV sizing</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools</h3>
-                <p><strong>ClimateStudio, ASHRAE 62.1 & 90.1, Load Calculations, RenewAire CORES, Energy Modeling</strong></p>
+                <p><strong>ClimateStudio, ASHRAE Standards, Load Calculations, RenewAire CORES</strong></p>
             </div>
         </div>
     </div>
@@ -1748,12 +1547,13 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('shading')">&times;</button>
             <h2 class="modal-title">Shaping Daylight Workshop</h2>
+            <img src="images/projects/shading-detail.jpg" alt="Daylight Analysis" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Intensive workshop exploring daylight performance optimization through 
-                    parametric iteration and simulation-based analysis.
+                    Intensive workshop exploring daylight performance through parametric 
+                    iteration and simulation-based analysis.
                 </p>
             </div>
 
@@ -1763,13 +1563,12 @@
                     <li>Spatial Daylight Autonomy (sDA)</li>
                     <li>Annual Sunlight Exposure (ASE)</li>
                     <li>Daylight Glare Probability (DGP)</li>
-                    <li>View Quality Analysis</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools</h3>
-                <p><strong>ClimateStudio, Rhino, Grasshopper, Radiance, Annual Daylight Metrics</strong></p>
+                <p><strong>ClimateStudio, Rhino, Grasshopper, Radiance</strong></p>
             </div>
         </div>
     </div>
@@ -1778,63 +1577,29 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('attendance')">&times;</button>
             <h2 class="modal-title">Attendance Matrix Tool</h2>
+            <img src="images/projects/attendance-detail.jpg" alt="Attendance Tool Interface" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
-                    Web-based tool built to automate attendance tracking for Carnegie Mellon's Environments II: 
-                    Active Building Systems course. Processes Excel files from 21 class sessions for 66 students, 
-                    calculating attendance percentages and generating formatted reports.
+                    Web-based automation tool processing Excel files for 66 students across 
+                    21 sessions with real-time percentage calculations.
                 </p>
             </div>
 
             <div class="highlight-box">
-                <h3>Problem Solved</h3>
+                <h3>Key Features</h3>
                 <ul>
-                    <li>Manual attendance tracking across 21 sessions was time-consuming and error-prone</li>
-                    <li>Data spread across multiple Excel sheets needed consolidation</li>
-                    <li>Percentage calculations and report generation required automation</li>
-                    <li>Needed accessible solution for future TAs without technical background</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Features</h3>
-                <ul>
-                    <li>Upload Excel file with multiple sheets (one per class session)</li>
-                    <li>Automatic email-based student matching across sessions</li>
+                    <li>Automatic email-based student matching</li>
                     <li>Real-time attendance percentage calculation</li>
-                    <li>Sortable student roster with attendance stats</li>
-                    <li>Export processed data to formatted Excel file</li>
-                    <li>Client-side processing (no server required, data privacy)</li>
+                    <li>Export processed data to Excel</li>
+                    <li>Saved 5+ hours of TA administrative work weekly</li>
                 </ul>
             </div>
 
             <div class="modal-section">
-                <h3>Technical Implementation</h3>
-                <ul>
-                    <li>Frontend: Pure JavaScript with HTML/CSS</li>
-                    <li>Excel Processing: SheetJS (XLSX.js) library</li>
-                    <li>Data Processing: Array manipulation and aggregation algorithms</li>
-                    <li>Export: Dynamic Excel generation from processed data</li>
-                    <li>Deployment: GitHub Pages for zero-cost hosting</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Impact</h3>
-                <ul>
-                    <li>Reduced attendance processing from hours to seconds</li>
-                    <li>Eliminated manual calculation errors</li>
-                    <li>Saved 5+ hours of TA administrative work</li>
-                    <li>Now available as open-source tool for other educators</li>
-                    <li>Live at: ananyashrimali03.github.io/attendance_matrix</li>
-                </ul>
-            </div>
-
-            <div class="modal-section">
-                <h3>Tools & Technologies</h3>
-                <p><strong>JavaScript, HTML/CSS, SheetJS (XLSX.js), Excel Processing, GitHub Pages, Automation</strong></p>
+                <h3>Tools</h3>
+                <p><strong>JavaScript, HTML/CSS, SheetJS (XLSX.js), GitHub Pages</strong></p>
             </div>
         </div>
     </div>
@@ -1843,12 +1608,13 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('gis')">&times;</button>
             <h2 class="modal-title">Environmental Justice Analysis: Louisiana Cancer Alley</h2>
+            <img src="images/projects/gis-detail.jpg" alt="GIS Spatial Analysis" class="modal-image">
             
             <div class="modal-section">
                 <h3>Overview</h3>
                 <p>
                     GIS analysis examining spatial relationships between industrial facilities 
-                    and community demographics in Louisiana's "Cancer Alley" region.
+                    and community demographics.
                 </p>
             </div>
 
@@ -1858,33 +1624,27 @@
                     <li>Kernel Density Analysis for facility clustering</li>
                     <li>Buffer Zone Analysis for proximity thresholds</li>
                     <li>Demographic Correlation Studies</li>
-                    <li>Temporal Analysis of facility growth</li>
                 </ul>
             </div>
 
             <div class="modal-section">
                 <h3>Tools</h3>
-                <p><strong>ArcGIS Pro, ModelBuilder, Python (ArcPy), Spatial Statistics, Kernel Density Analysis</strong></p>
+                <p><strong>ArcGIS Pro, ModelBuilder, Python (ArcPy), Spatial Statistics</strong></p>
             </div>
         </div>
     </div>
 
     <script>
         function switchTab(tabName) {
-            // Hide all content
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.remove('active');
             });
             
-            // Remove active from all buttons
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             
-            // Show selected content
             document.getElementById(tabName + '-content').classList.add('active');
-            
-            // Add active to clicked button
             event.target.classList.add('active');
         }
 
@@ -1900,7 +1660,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
         document.querySelectorAll('.modal').forEach(modal => {
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
@@ -1910,7 +1669,6 @@
             });
         });
 
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
